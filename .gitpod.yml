@@ -1,0 +1,8 @@
+tasks:
+  - init: npm install --prefix server && npm install --prefix client
+    command: npm run dev --prefix server
+ports:
+  - port: 3000
+    onOpen: open-preview
+  - port: 5173
+    onOpen: open-preview
